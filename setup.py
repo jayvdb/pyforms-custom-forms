@@ -10,7 +10,7 @@ __email__ = ["ricardojvr@gmail.com"]
 __status__ = "Development"
 
 import re
-from setuptools import setup
+from setuptools import setup, find_packages
 
 version, license = None, None
 with open('model_extra_fields/__init__.py', 'r') as fd:
@@ -28,6 +28,6 @@ setup(
     author='Ricardo Ribeiro',
     author_email='ricardo.ribeiro@research.fchampalimaud.org',
     license=license,
-    packages=['model_extra_fields'],
+    packages=find_packages(),
     include_package_data=True,
 )
